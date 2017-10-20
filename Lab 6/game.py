@@ -384,12 +384,12 @@ def main():
         # Display game status (room description, inventory etc.)
 
         if (first_exec):
-            print("Welcome to the game.\nYour objective is to collect all items, and drop them off at your personal tutor's office")
+            print("\n\nWelcome to the game.\nYour objective is to collect all items, and drop\nthem off at your personal tutor's office")
             print("Good luck!\n")
             first_exec = False
 
         if (len(rooms["Tutor"]["items"]) == 6):
-            print("You won the game!\nYou found all the items!")
+            print("You won the game!\nYou gave all the items to your tutor!")
             buffer_text = input("\nPress ENTER to exit.")
             return
 
